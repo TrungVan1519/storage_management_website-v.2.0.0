@@ -1,0 +1,12 @@
+Project1.0_Storage_Management
+Completed 37th video
+Uncompleted: from 38th video to 42nd video
+
+Problems:
++ Cannot update invoice: Cannot resolve
+	- "/goods-receipt/save" update quantity goods receipt
+	- "/goods-issue/save" update quantity goods issues
+
++ Cannot add new user: solution is add a new field roleID to[com.trungvan.entity.User] and using this instead of userRoles[0].role.id
+	- Invalid property 'userRoles[0]' of bean class [com.trungvan.entity.User]: 
+		Cannot get element with index 0 from Set of size 0, accessed using property path 'userRoles[0]'

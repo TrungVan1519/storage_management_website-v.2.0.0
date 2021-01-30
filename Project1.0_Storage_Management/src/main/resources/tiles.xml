@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+<tiles-definitions>  
+ 
+   <!-- <<==>> Base View Definition -->
+   <definition name="baseView.definition" template="/WEB-INF/tiles-view/base-view/base-layout.jsp"> 
+       <put-attribute name="title" 		value="Default title"/>  
+       <put-attribute name="top-nav" 	value="/WEB-INF/tiles-view/base-view/top-nav.jsp"/>  
+       <put-attribute name="sidebar" 	value="/WEB-INF/tiles-view/base-view/sidebar.jsp"/>  
+       <put-attribute name="body" 		value="/WEB-INF/tiles-view/base-view/body.jsp"/>  
+       <put-attribute name="footer" 	value="/WEB-INF/tiles-view/base-view/footer.jsp"/>  
+   </definition>  
+   
+   
+ 
+ 
+   <!-- <<==>> Custom View Definition Extends Base Definition -->	
+   <!-- Home View -->
+   <definition name="indexView.definition" extends="baseView.definition">  
+       <put-attribute name="title" 	value="Home View"/>  
+       <put-attribute name="body" 	value="/WEB-INF/tiles-view/custom-view/home-view/index.jsp"/>  
+   </definition>  
+   
+   <!-- Category View -->
+   <definition name="categoryListView.definition" extends="baseView.definition">  
+       <put-attribute name="title" 	value="Category List View"/>  
+       <put-attribute name="body" 	value="/WEB-INF/tiles-view/custom-view/category-view/category-list.jsp"/>  
+   </definition>  
+   
+   <definition name="categoryAction.definition" extends="baseView.definition">  
+       <put-attribute name="title" 	value="Category Form Action View"/>  
+       <put-attribute name="body" 	value="/WEB-INF/tiles-view/custom-view/category-view/category-action.jsp"/>  
+   </definition>   
+   
+   <!-- Product Info View -->
+   <definition name="productInfoListView.definition" extends="baseView.definition">  
+       <put-attribute name="title" 	value="ProductInfo List View"/>  
+       <put-attribute name="body" 	value="/WEB-INF/tiles-view/custom-view/product-info-view/product-info-list.jsp"/>  
+   </definition>  
+   
+   <definition name="productInfoAction.definition" extends="baseView.definition">  
+       <put-attribute name="title" 	value="ProductInfo Form Action View"/>  
+       <put-attribute name="body" 	value="/WEB-INF/tiles-view/custom-view/product-info-view/product-info-action.jsp"/>  
+   </definition>  
+   
+   <!-- Product In Stock View -->
+   <definition name="productInStockView.definition" extends="baseView.definition">  
+       <put-attribute name="title" 	value="ProductInStock List View"/>  
+       <put-attribute name="body" 	value="/WEB-INF/tiles-view/custom-view/product-in-stock-view/product-in-stock-list.jsp"/>  
+   </definition>  
+   
+   <!-- History View -->
+   <definition name="historyListView.definition" extends="baseView.definition">  
+       <put-attribute name="title" 	value="History List View"/>  
+       <put-attribute name="body" 	value="/WEB-INF/tiles-view/custom-view/history-view/history-list.jsp"/>  
+   </definition>  
+   
+   <!-- Invoice View -->
+   <definition name="invoiceListView.definition" extends="baseView.definition">  
+       <put-attribute name="title" 	value="Goods Receipt List View"/>  
+       <put-attribute name="body" 	value="/WEB-INF/tiles-view/custom-view/invoice/goods-receipt-list.jsp"/>  
+   </definition>  
+   
+   <definition name="invoiceAction.definition" extends="baseView.definition">  
+       <put-attribute name="title" 	value="Goods Receipt Action View"/>  
+       <put-attribute name="body" 	value="/WEB-INF/tiles-view/custom-view/invoice/goods-receipt-action.jsp"/>  
+   </definition>  
+   
+   <definition name="goodsIssueListView.definition" extends="baseView.definition">  
+       <put-attribute name="title" 	value="Goods Receipt List View"/>  
+       <put-attribute name="body" 	value="/WEB-INF/tiles-view/custom-view/invoice/goods-issue-list.jsp"/>  
+   </definition>  
+   
+   <definition name="goodsIssueAction.definition" extends="baseView.definition">  
+       <put-attribute name="title" 	value="Goods Receipt Action View"/>  
+       <put-attribute name="body" 	value="/WEB-INF/tiles-view/custom-view/invoice/goods-issue-action.jsp"/>  
+   </definition>  
+   
+   <!-- User View --> 
+   
+   <definition name="userListView.definition" extends="baseView.definition">  
+       <put-attribute name="title" 	value="Goods Receipt List View"/>  
+       <put-attribute name="body" 	value="/WEB-INF/tiles-view/custom-view/user-view/user-list.jsp"/>  
+   </definition>  
+   
+   <definition name="userAction.definition" extends="baseView.definition">  
+       <put-attribute name="title" 	value="Goods Receipt Action View"/>  
+       <put-attribute name="body" 	value="/WEB-INF/tiles-view/custom-view/user-view/user-action.jsp"/>  
+   </definition>  
+   
+   
+   
+   
+   
+   <!-- <<==>> Paging View Definition Extends Base Definition -->
+   <!-- Paging Category List View -->
+   <definition name="pagingCategoryListView.definition" extends="baseView.definition">  
+       <put-attribute name="title" 	value="Paging Category List View"/>  
+       <put-attribute name="body" 	value="/WEB-INF/tiles-view/paging-view/category-view/category-list.jsp"/>  
+   </definition>  
+   
+   <!-- Paging ProductInfo List View -->
+   <definition name="pagingProductInfoListView.definition" extends="baseView.definition">  
+       <put-attribute name="title" 	value="Paging Product Info List View"/>  
+       <put-attribute name="body" 	value="/WEB-INF/tiles-view/paging-view/product-info-view/product-info-list.jsp"/>  
+   </definition>  
+   
+   <!-- Paging ProductInStock List View -->
+   <definition name="pagingProductInStockView.definition" extends="baseView.definition">  
+       <put-attribute name="title" 	value="Paging Product In Stock List View"/>  
+       <put-attribute name="body" 	value="/WEB-INF/tiles-view/paging-view/product-in-stock-view/product-in-stock-list.jsp"/>  
+   </definition>  
+   
+   <!-- Paging History List View -->
+   <definition name="pagingHistoryListView.definition" extends="baseView.definition">  
+       <put-attribute name="title" 	value="Paging Product In Stock List View"/>  
+       <put-attribute name="body" 	value="/WEB-INF/tiles-view/paging-view/history-view/history-list.jsp"/>  
+   </definition>  
+   
+   
+   
+   
+   
+   <!--  <<==>> Custom View Definition Not Extends Base Definition -->
+   <!-- Access Denied View -->
+   <!-- Khong ke thua base ma van co the su dung duoc Spring Tiles - dinh? cao vl :)) -->
+   <definition name="accessDeniedView.definition" template="/WEB-INF/view/access-denied.jsp"/>
+   
+</tiles-definitions>
